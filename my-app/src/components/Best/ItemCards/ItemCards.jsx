@@ -1,0 +1,93 @@
+import ItemImage from "./ItemImage";
+import ItemPrice from "./ItemPrice";
+// import MiniShopInfo from "./MiniShopInfo";
+import { useMediaQuery, MediaQuery } from "react-responsive";
+
+const ItemCards = ({ data }) => {
+  const isMobile = useMediaQuery({ maxWidth: 978 });
+  return (
+    <div className="box__best-list">
+      <ul className="list__best">
+        {data.map((item) => {
+          const {
+            avgStarPoint,
+            consultingPeriod,
+            discountPrice,
+            discountRate,
+            expressShippingText,
+            goodsCode,
+            goodsName,
+            imageUrl,
+            isAdultItem,
+            isBigSmileItem,
+            isExpressShipping,
+            isFreeShipping,
+            isPriceExpose,
+            isStartPrice,
+            isSuperDeal,
+            itemPriceType,
+            linkUrl,
+            lmos,
+            price,
+            rank,
+            couponPrice,
+            miniShopInfo,
+          } = item || {};
+          return (
+            <li className="list-item" key={goodsCode}>
+              <a href="" className="link">
+                <ItemImage
+                  imageUrl={imageUrl}
+                  isBigSmileItem={isBigSmileItem}
+                  isAdultItem={isAdultItem}
+                  rank={rank}
+                />
+
+                <div className="box__item-info">
+                  {isMobile && (
+                    <ItemPrice
+                      isMobile={isMobile}
+                      discountPrice={discountPrice}
+                      discountRate={discountRate}
+                      price={price}
+                      isFreeShipping={isFreeShipping}
+                      itemPriceType={itemPriceType}
+                      couponPrice={couponPrice}
+                    />
+                  )}
+                  <p className="box__item-title">{goodsName}</p>
+                  {!isMobile && (
+                    <ItemPrice
+                      isMobile={isMobile}
+                      discountPrice={discountPrice}
+                      discountRate={discountRate}
+                      price={price}
+                      isFreeShipping={isFreeShipping}
+                      itemPriceType={itemPriceType}
+                      couponPrice={couponPrice}
+                    />
+                  )}
+
+                  {!isMobile && isSuperDeal && (
+                    <div className="box__lmo-tags">
+                      <span className="text__tags">
+                        <img
+                          src="//script.gmarket.co.kr/starro/desktop/images/single/best/logo_superdeal@3x.png"
+                          alt="슈퍼딜"
+                          className="image"
+                        />
+                      </span>
+                    </div>
+                  )}
+                </div>
+              </a>
+              {/* {isMobile && <MiniShopInfo miniShopInfo={miniShopInfo} />} */}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+export default ItemCards;

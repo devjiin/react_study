@@ -1,13 +1,14 @@
 import Category from "./Category";
-import mockData from '../mockData/mockData';
-
+import mockData from "../mockData/mockData";
+import ItemCards from "./ItemCards/ItemCards";
 
 const Index = () => {
-	return(
-		<div>
-			<Category data={mockData.best.category} />
-		</div>
-	)
-}
+  return (
+    <>
+      <Category data={mockData.best.category} />
+      <ItemCards data={mockData.best.items} />
+    </>
+  );
+};
 
 export default Index;
