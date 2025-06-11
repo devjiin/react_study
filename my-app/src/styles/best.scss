@@ -33,7 +33,7 @@ button{appearance:none;border:none}
 }
 
 .container{
-	max-width: 1132px;
+	max-width: 1200px;
 	margin:0 auto;
 }
 .box__best-top{
@@ -72,9 +72,13 @@ button{appearance:none;border:none}
   margin-bottom: 40px;
   .box__category-filter{
     position: relative;
-    width: var(--minWidth);
     margin: 0 auto;
     padding: 20px 0 30px;
+	border-bottom:1px solid #eee;
+  }
+  & .box__category-inner:not(.swiper){
+	display: flex;
+	overflow: auto;
   }
   .swiper{
     max-width: 1136px;
@@ -82,7 +86,6 @@ button{appearance:none;border:none}
     overflow: hidden;
     .swiper-slide{
       width: auto;
-      margin-right: 21px;
     }
   }
   .link__category{
@@ -131,12 +134,25 @@ button{appearance:none;border:none}
         line-height: 20px;
       }
   }
+  .swiper-button-prev,
+  .swiper-button-next{
+	&::after{
+
+		background-image: url(//script.gmarket.co.kr/starro/desktop/images/sprite/best/sprite.svg#icon__swiper-arrow);
+		background-size: var(--spriteSize);
+		width: 32px;
+		height: 32px;
+		margin-top: 0;
+		top: 38px;
+		right: 0;
+	}
+  }
 }
 
 .box__best-list{
 	padding:0 16px;
 	.list__best{
-    display: flex;
+		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		.list-item{
@@ -290,6 +306,11 @@ button{appearance:none;border:none}
 }
 
 @media (max-width: 978px){
+	.box__category-inner{
+		display: flex;
+		overflow: auto;
+    gap: 8px;
+	}
 .box__best-list{
 	max-width: 768px;
 	padding: 0 16px;

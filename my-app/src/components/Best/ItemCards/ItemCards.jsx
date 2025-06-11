@@ -1,10 +1,8 @@
 import ItemImage from "./ItemImage";
 import ItemPrice from "./ItemPrice";
 // import MiniShopInfo from "./MiniShopInfo";
-import { useMediaQuery, MediaQuery } from "react-responsive";
 
-const ItemCards = ({ data }) => {
-  const isMobile = useMediaQuery({ maxWidth: 978 });
+const ItemCards = ({ data, isMobile = false }) => {
   return (
     <div className="box__best-list">
       <ul className="list__best">
