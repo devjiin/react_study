@@ -3,10 +3,10 @@ import "../styles/nav.css";
 
 const navText = [
   {
-    id: 1,
+    id: "router",
   },
   {
-    id: 2,
+    id: "state",
   },
   {
     id: 3,
@@ -15,10 +15,10 @@ const navText = [
 const Nav = () => {
   return (
     <div className="box__nav">
-      {navText.map(({ id, name }) => {
+      {navText.map(({ id }) => {
         return (
-          <Link to={id === 1 ? "/" : `/page${id}`} key={id} className="button">
-            {`${id}주차`}
+          <Link to={id === 1 ? "/" : `/${id}`} key={id} className="button">
+            {id}
           </Link>
         );
       })}
