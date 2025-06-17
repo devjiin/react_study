@@ -399,6 +399,9 @@
     "shortcutLandingUrl": "#",
     "shortcutText": "전체보기",
     "title": "지금 잘 나가는 신선식품 베스트는?",
+    "tabs": [
+      "a", "b", "c", "d"
+    ],
     "items": [
       {
         "buyCount": 51809,
