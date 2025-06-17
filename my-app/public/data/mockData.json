@@ -396,48 +396,298 @@
     ]
   },
   "emartMall": {
+    "recipeSeq": 12009,
+    "sortOrderby": 19,
     "shortcutLandingUrl": "#",
     "shortcutText": "전체보기",
     "title": "지금 잘 나가는 신선식품 베스트는?",
-    "tabs": [
-      "a", "b", "c", "d"
-    ],
-    "items": [
+    "sdBrandItemCatalogs": [
       {
-        "buyCount": 51809,
-        "buyUnitCount": 1,
-        "couponDiscount": {
-          "discountType": "R",
-          "discountPrice": "0",
-          "discountRate": "15"
-        },
-        "discountRate": 0,
-        "hasOption": false,
-        "imageUrl": "//gdimg.gmarket.co.kr/3714977969/still/400?ver=1741907405",
-        "isAdult": false,
-        "isBigSmileItem": false,
-        "isCartVisible": true,
-        "isSoldOut": false,
-        "itemName": "이맛쌀 20kg",
-        "itemNo": "3714977969",
-        "itemPrice": 59900,
-        "itemUrl": "#",
-        "rank": 1,
-        "minBuyCount": 0,
-        "reviewPoint": {
-          "starPoint": 4.76,
-          "reviewCount": 19276
-        },
-        "sellerInfo": {
-          "sellCustNo": "155104283",
-          "isLmoOfficialSeller": false,
-          "isFashionSquareSeller": false,
-          "isBrandOfficialSeller": false
-        },
-        "sellPrice": 59900,
-        "tagLabels": [{ "code": 0, "text": "전단상품" }],
-        "dealImageUrl": "",
-        "deliveryCode": "M"
+        "brandLogoImage": "//image.gmarket.co.kr/hanbando/202207/a768ab02-64c7-423d-a468-5d7b2ef00ec8.png",
+        "sdBrandName": "노브랜드",
+        "sdBrandPageUrl": "#",
+        "items": [
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/3714977969/still/400?ver=1741907405",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "이맛쌀 20kg",
+            "itemNo": "3714977969",
+            "itemPrice": 59900,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 59900,
+            "tagLabels": [{ "code": 0, "text": "전단상품" }],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          },
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/2519000890/still/400?ver=1749772824",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "노브랜드냉동 삼겹살 바로구이 (1000g)",
+            "itemNo": "2519000890",
+            "itemPrice": 9980,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 9980,
+            "tagLabels": [],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          },
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/2522869044/still/400?ver=1746778722",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "노브랜드 굿모닝 굿밀크 1L",
+            "itemNo": "2522869044",
+            "itemPrice": 1890,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 1890,
+            "tagLabels": [],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          }
+        ]
+      },
+      {
+        "brandLogoImage": "//image.gmarket.co.kr/hanbando/202207/358bca3b-4811-4672-aa6d-21f6b1008f46.png",
+        "sdBrandName": "피코크",
+        "sdBrandPageUrl": "#",
+        "items": [
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/3714977969/still/400?ver=1741907405",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "222이맛쌀 20kg",
+            "itemNo": "3714977969",
+            "itemPrice": 59900,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 59900,
+            "tagLabels": [{ "code": 0, "text": "전단상품" }],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          }
+        ]
+      },
+      {
+        "brandLogoImage": "//image.gmarket.co.kr/hanbando/202207/9ec95a8c-96c6-42d2-ad38-333124e968aa.png",
+        "sdBrandName": "데이즈",
+        "sdBrandPageUrl": "#",
+        "items": [
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/3714977969/still/400?ver=1741907405",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "333이맛쌀 20kg",
+            "itemNo": "3714977969",
+            "itemPrice": 59900,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 59900,
+            "tagLabels": [{ "code": 0, "text": "전단상품" }],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          }
+        ]
+      },
+      {
+        "brandLogoImage": "//image.gmarket.co.kr/hanbando/202207/9854cd66-ddb3-462f-bb1d-e914ee4b5430.png",
+        "sdBrandName": "일렉트로마트",
+        "sdBrandPageUrl": "#",
+        "items": [
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/3714977969/still/400?ver=1741907405",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "444이맛쌀 20kg",
+            "itemNo": "3714977969",
+            "itemPrice": 59900,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 59900,
+            "tagLabels": [{ "code": 0, "text": "전단상품" }],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          }
+        ]
+      },
+      {
+        "brandLogoImage": "//image.gmarket.co.kr/hanbando/202207/8cf09cbb-bafa-46a7-b176-d19c41a8cb5c.png",
+        "sdBrandName": "몰리스",
+        "sdBrandPageUrl": "#",
+        "items": [
+          {
+            "buyCount": 51809,
+            "buyUnitCount": 1,
+            "couponDiscount": {
+              "discountType": "R",
+              "discountPrice": "0",
+              "discountRate": "15"
+            },
+            "discountRate": 0,
+            "hasOption": false,
+            "imageUrl": "//gdimg.gmarket.co.kr/3714977969/still/400?ver=1741907405",
+            "isAdult": false,
+            "isBigSmileItem": false,
+            "isCartVisible": true,
+            "isSoldOut": false,
+            "itemName": "555이맛쌀 20kg",
+            "itemNo": "3714977969",
+            "itemPrice": 59900,
+            "itemUrl": "#",
+            "rank": 1,
+            "minBuyCount": 0,
+            "reviewPoint": {
+              "starPoint": 4.76,
+              "reviewCount": 19276
+            },
+            "sellerInfo": {
+              "sellCustNo": "155104283",
+              "isLmoOfficialSeller": false,
+              "isFashionSquareSeller": false,
+              "isBrandOfficialSeller": false
+            },
+            "sellPrice": 59900,
+            "tagLabels": [{ "code": 0, "text": "전단상품" }],
+            "dealImageUrl": "",
+            "deliveryCode": "M"
+          }
+        ]
       }
     ]
   }
