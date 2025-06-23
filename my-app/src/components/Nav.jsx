@@ -9,7 +9,7 @@ const navText = [
     id: "state",
   },
   {
-    id: 3,
+    id: "useEffect",
   },
 ];
 const Nav = () => {
