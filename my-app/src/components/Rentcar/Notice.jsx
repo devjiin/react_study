@@ -1,12 +1,14 @@
 import { useState } from "react";
+import clsx from "clsx";
 import { v4 as uuidv4 } from "uuid";
 
 const Notice = ({ data }) => {
-  uuidv4();
   const [isExpened, setIsExpened] = useState(false);
   const handleClick = () => {
     setIsExpened((prev) => !prev);
   };
+
+  uuidv4();
   return (
     <>
       <button
@@ -17,7 +19,7 @@ const Notice = ({ data }) => {
       >
         자세히
       </button>
-      <ul className="list__notice">
+      <ul className={clsx('list__notice', isExpened && 'list__notice--active')}>
         {data.map((text) => (
           <li className="list-item" key={uuidv4()}>
             {text}

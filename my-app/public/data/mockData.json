@@ -692,7 +692,7 @@
     ]
   },
   "rentcar": {
-    "agreeListItem": [
+    "agreeList": [
       {
         "labelText": "보험이용 규정(필수)",
         "notice": [

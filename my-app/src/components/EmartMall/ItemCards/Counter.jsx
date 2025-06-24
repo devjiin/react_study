@@ -9,7 +9,7 @@ const Counter = ({ count, setCount }) => {
         <span className="for-a11y">상품 수 감소</span>
       </button>
       <span className="element-info-item-qty">
-        <span class="for-a11y">선택된 수량</span>
+        <span className="for-a11y">선택된 수량</span>
         {count}
       </span>
       <button

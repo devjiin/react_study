@@ -1,0 +1,27 @@
+.box__top{
+	width:100%;
+	height: 100px;
+	background: #e0e0e0;
+}
+.box__top--fixed{
+  position: fixed;
+}
+.box__top--fixed + .list{
+  padding-top: 200px;
+}
+
+.list{
+	padding-top:100px
+}
+.list__notice{
+	display: none;
+}
+.list__notice.list__notice--active{
+	display: block;
+}
+
+.box__empty{
+	width:100%;
+	height: 1000px;
+	background: #e0e0e0;
+}

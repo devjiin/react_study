@@ -1,12 +1,14 @@
-const Checkbox = ({ labelText, idx }) => {
+const Checkbox = ({ labelText, id, checkedItem, onChange }) => {
   return (
     <>
       <input
         type="checkbox"
-        id={`inputCheckbox${idx}`}
+        id={`inputCheckbox${id}`}
         className="input__checkbox"
+        onChange={(e)=>onChange(e.target.checked, id)}
+        checked={checkedItem.includes(id)}
       />
-      <label htmlFor={`inputCheckbox${idx}`} className="text__label">
+      <label htmlFor={`inputCheckbox${id}`} className="text__label">
         {labelText}
       </label>
     </>
