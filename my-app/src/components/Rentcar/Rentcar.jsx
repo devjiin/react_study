@@ -1,14 +1,13 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import mockData from "../../../public/data/mockData.json";
 import { v4 as uuidv4 } from "uuid";
 import Notice from "./Notice";
 import Checkbox from "./Checkbox";
 import clsx from "clsx";
+import throttle from 'lodash/throttle';
 
 const Rentcar = () => {
-  const fixRef = useRef(null);
   const [isFixed, setIsFixed] = useState(false);
-  const [scrollTop, setScrollTop] = useState(0);
   const [data, setData] = useState(mockData.rentcar.agreeList);
   
   const dataLength = data.length;
@@ -31,22 +30,26 @@ const Rentcar = () => {
   }
 
   useEffect(()=>{
+  const throttledScroll = throttle(() => {
+    const currentScroll = window.scrollY;
+    setIsFixed(currentScroll >= 100);
+  }, 200);
+
   const dataWithId = data.map((item)=> ({
     ...item,
     id: uuidv4()
   }));
   setData(dataWithId);
 
-  window.addEventListener('scroll', ()=>{
-    setScrollTop(window.scrollY);
-
-    scrollTop >= 100 ? setIsFixed(true) : setIsFixed(false);
-  });
-  },[scrollTop]);
+  window.addEventListener('scroll', throttledScroll);
+  return () => {
+    window.removeEventListener('scroll', throttledScroll);
+  }
+  },[]);
 
   return (
     <>
-      <div className={clsx('box__top', isFixed && 'box__top--fixed')} ref={fixRef}></div>
+      <div className={clsx('box__top', isFixed && 'is-fixed')}>fix 영역</div>
       <ul className="list">
         <li className="list-item">
           <span className="box__checkbox-wrap">
@@ -73,7 +76,6 @@ const Rentcar = () => {
           )
         })}
       </ul>
-      <div className="box__empty"></div>
     </>
   );
 };
