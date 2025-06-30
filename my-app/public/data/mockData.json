@@ -722,5 +722,49 @@
         "notice": ["제공받는 자"]
       }
     ]
+  },
+  "brandshop": {
+    "cards" : [
+      {
+        "cardId" : "",
+        "title":"셀메이징 비타 SET",
+        "text1": "피부 속 잡티 & 흔적부터 모공,",
+        "text2": "피부 톤 3단계를 밝히는 3중케어",
+        "imageUrl": "//image.esmplus.com/202504/17/4bcd21fd6c1944c2.JPG",
+        "landingUrl" : "#"
+      },
+      {
+        "cardId" : "cardId0",
+        "title":"다이브인 포맨 SET",
+        "text1": "첫단계 3초 속수분 충전! 3초 수분스킨",
+        "text2": "바르자마자 수분충전! 쾌속쿨링 로션",
+        "imageUrl": "//image.esmplus.com/202504/17/3623c5172bf441a6.JPG",
+        "landingUrl" : "#"
+      },
+      {
+        "cardId" : "cardId1",
+        "title":"민감피부 진정케어",
+        "text1": "밸런스풀 시카 진정 세럼",
+        "text2": "밸런스풀 시카 마스크 10매 ",
+        "imageUrl": "//image.esmplus.com/202504/17/e7ada6f028064a62.JPG",
+        "landingUrl" : "#"
+      },
+      {
+        "cardId" : "cardId2",
+        "title":"모공&탄력케어",
+        "text1": "셀메이징 모공앰플 런칭!",
+        "text2": null,
+        "imageUrl": "//image.esmplus.com/202504/17/9836744065c7432e.JPG",
+        "landingUrl" : "#"
+      },
+      {
+        "cardId" : "cardId3",
+        "title":"속수분케어",
+        "text1": "다이브인 히알루론산 세럼&크림 set",
+        "text2": null,
+        "imageUrl": "//image.esmplus.com/202504/17/5c2aec816e424f5d.JPG",
+        "landingUrl" : "#"
+      }
+    ]
   }
 }

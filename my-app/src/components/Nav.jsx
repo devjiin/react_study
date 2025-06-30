@@ -11,6 +11,9 @@ const navText = [
   {
     id: "useEffect",
   },
+  {
+    id: "swiper",
+  },
 ];
 const Nav = () => {
   return (

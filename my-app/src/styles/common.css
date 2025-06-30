@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+:root{
+  --minWidth: 1200px
+  --spriteSize: 100% 100%;
+  --White: #fff;
+  --Black: #000;
+  --Black-RGB: 0, 0, 0;
+  --Gray-200: #eee;
+  --Gray-500: #9e9e9e;
+  --Gray-600: #757575;
+  --Gray-800: #424242;
+  --Gray-900: #222;
+  --Green-500: #00c400;
+
+  --Red-600: #da120d;
+}
+
+a{text-decoration: none;}
+button{appearance:none;border:none}
+
+.for-a11y{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  text-indent: -5000em;
+}
