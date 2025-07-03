@@ -1,5 +1,9 @@
+
 @import "tailwindcss";
 
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+}
 :root{
   --minWidth: 1200px
   --spriteSize: 100% 100%;
