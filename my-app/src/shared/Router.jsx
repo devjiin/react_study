@@ -3,6 +3,7 @@ import Page1 from "../pages/Page1";
 import Page2 from "../pages/Page2";
 import Page3 from "../pages/Page3";
 import Page4 from "../pages/Page4";
+import Page5 from "../pages/Page5";
 
 export const Router = () => {
   return (
@@ -11,6 +12,7 @@ export const Router = () => {
       <Route path="/state" element={<Page2 />} />
       <Route path="/useEffect" element={<Page3 />} />
       <Route path="/swiper" element={<Page4 />} />
+      <Route path="/focus" element={<Page5 />} />
     </Routes>
   );
 };

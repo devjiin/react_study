@@ -14,13 +14,17 @@ const navText = [
   {
     id: "swiper",
   },
+  {
+    id: "focus",
+  },
+
 ];
 const Nav = () => {
   return (
     <div className="box__nav">
       {navText.map(({ id }) => {
         return (
-          <Link to={id === 1 ? "/" : `/${id}`} key={id} className="button">
+          <Link to={id === "router" ? "/" : `/${id}`} key={id} className="button">
             {id}
           </Link>
         );

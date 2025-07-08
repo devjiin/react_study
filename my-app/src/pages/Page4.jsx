@@ -2,7 +2,7 @@ import BrandShop from "../components/BrandShop/BrandShop";
 import "../styles/common.css";
 import "../styles/brandshop.css";
 
-const Page3 = () => {
+const Page4 = () => {
   return (
     <div className="container">
       <BrandShop />
@@ -10,4 +10,4 @@ const Page3 = () => {
   );
 };
 
-export default Page3;
+export default Page4;

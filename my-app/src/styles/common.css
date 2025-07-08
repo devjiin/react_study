@@ -34,3 +34,13 @@ button{appearance:none;border:none}
   overflow: hidden;
   text-indent: -5000em;
 }
+
+.dimmed {
+  opacity: 0.6;
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  width: 100%;
+  background-color: #000;
+  overscroll-behavior: none;
+}

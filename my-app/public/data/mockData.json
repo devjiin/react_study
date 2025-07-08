@@ -766,5 +766,30 @@
         "landingUrl" : "#"
       }
     ]
+  },
+  "hotel": {
+    "tabs" : [
+    {
+      "id":1,
+      "tabname":"호텔",
+      "isActive": false
+    },
+    {
+      "id":2,
+      "tabname":"리조트",
+      "isActive": true
+    },
+    {
+      "id":3,
+      "tabname":"펜션",
+      "isActive": false
+    },
+    {
+      "id":4,
+      "tabname":"모텔",
+      "isActive": false
+    }
+  ],
+  "services": ["픽업", "무료조식", "수영장", "스파", "세미나실", "인터넷(Wifi)", "노래방", "농구장", "축구장", "램프파이어"]
   }
 }
