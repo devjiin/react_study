@@ -17,14 +17,20 @@ const navText = [
   {
     id: "focus",
   },
-
+  {
+    id: "createPortal",
+  },
 ];
 const Nav = () => {
   return (
     <div className="box__nav">
       {navText.map(({ id }) => {
         return (
-          <Link to={id === "router" ? "/" : `/${id}`} key={id} className="button">
+          <Link
+            to={id === "router" ? "/" : `/${id}`}
+            key={id}
+            className="button"
+          >
             {id}
           </Link>
         );
