@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { createPortal } from "react-dom";
 import EmartMall from "../components/EmartMall/EmartMall";
 import "../styles/emartmall.scss";
 import Layer from "../components/EmartMall/Layer/Layer";
@@ -11,7 +12,8 @@ const Page2 = () => {
     <div className="container">
       <Layercontext.Provider value={{ isLayerOpen, setIsLayerOpen }}>
         <EmartMall />
-        <Layer />
+        {isLayerOpen &&
+          createPortal(<Layer />, document.querySelector("#root"))}
       </Layercontext.Provider>
     </div>
   );

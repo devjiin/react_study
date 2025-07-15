@@ -1,10 +1,9 @@
 import clsx from "clsx";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Title from "./Titile";
 
 const Layer = ({ data, isOpen, setIsOpen, buttonRef }) => {
   const { tabs, services } = data;
-  const [isSelected, setIsSelected] = useState(false);
   const modalRef = useRef(null);
   const handleClickCloseLayer = () => {
     setIsOpen(false);

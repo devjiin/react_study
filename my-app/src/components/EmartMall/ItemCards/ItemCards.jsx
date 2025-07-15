@@ -1,13 +1,11 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import CartButton from "./CartButton";
 import Counter from "./Counter";
 import ItemImage from "./ItemImage";
 // import ItemPrice from "./ItemPrice";
-import { Layercontext } from "../../../pages/Page2";
 import FavoritButton from "./FavoritButton";
 
-const ItemCard = ({ item }) => {
-  const { setIsLayerOpen } = useContext(Layercontext);
+const ItemCard = ({ item, setIsLayerOpen }) => {
   const {
     buyCount,
     buyUnitCount,
@@ -36,7 +34,7 @@ const ItemCard = ({ item }) => {
     <div className="box__itemcard-container">
       <div className="box__itemcard-body">
         <div className="box__itemcard-inner">
-          {tagLabels.length > 0 &&
+          {tagLabels?.length > 0 &&
             tagLabels.map((label) => {
               const { code, text } = label;
               return (
