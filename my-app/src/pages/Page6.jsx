@@ -10,8 +10,7 @@ const Page6 = () => {
   return (
     <div className="container">
       <ItemCards
-        item={mockData.emartMall.sdBrandItemCatalogs[0]}
-        pageNum={6}
+        item={mockData.emartMall.sdBrandItemCatalogs[0].items[0]}
         setIsLayerOpen={setIsLayerOpen}
       />
       {isLayerOpen &&

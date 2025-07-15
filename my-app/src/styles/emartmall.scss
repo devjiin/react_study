@@ -406,7 +406,10 @@ button {
   display: block;
   margin-top: 4px;
   font-size: 0;
-  font-family: Gmarket Sans, "Gmarket Sans", sans-serif;
+  font-family:
+    Gmarket Sans,
+    "Gmarket Sans",
+    sans-serif;
 }
 
 .box__itemcard-price-area .box__prime-cost .text__dc-rate {
@@ -444,8 +447,15 @@ button {
   font-size: 13px;
   line-height: 17px;
   color: #222;
-  font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, Roboto,
-    Noto Sans CJK KR, Tahoma, "Noto Sans KR", sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Apple SD Gothic Neo,
+    Roboto,
+    Noto Sans CJK KR,
+    Tahoma,
+    "Noto Sans KR",
+    sans-serif;
   font-weight: normal;
 }
 
@@ -609,6 +619,11 @@ button {
 
 .box__itemcard-container .box__itemcard-img {
   display: block;
+}
+.box__itemcard-container .box__itemcard-img .box__label-rank {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .box__itemcard-container .box__itemcard-img:after {
