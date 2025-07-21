@@ -1,20 +1,41 @@
-import { Route, Routes } from "react-router-dom";
 import Page1 from "../pages/Page1";
 import Page2 from "../pages/Page2";
 import Page3 from "../pages/Page3";
 import Page4 from "../pages/Page4";
 import Page5 from "../pages/Page5";
 import Page6 from "../pages/Page6";
+import App from "../App";
+import { createBrowserRouter } from "react-router-dom";
 
-export const Router = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Page1 />} />
-      <Route path="/state" element={<Page2 />} />
-      <Route path="/useEffect" element={<Page3 />} />
-      <Route path="/swiper" element={<Page4 />} />
-      <Route path="/focus" element={<Page5 />} />
-      <Route path="/createPortal" element={<Page6 />} />
-    </Routes>
-  );
-};
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Page1 />,
+      },
+      {
+        path: "/state",
+        element: <Page2 />,
+      },
+      {
+        path: "/useEffect",
+        element: <Page3 />,
+      },
+      {
+        path: "/swiper",
+        element: <Page4 />,
+      },
+      {
+        path: "/focus",
+        element: <Page5 />,
+      },
+      {
+        path: "/createPortal",
+        element: <Page6 />,
+      },
+    ],
+  },
+]);

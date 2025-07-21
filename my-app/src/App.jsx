@@ -1,13 +1,12 @@
-import { BrowserRouter } from "react-router-dom";
-import { Router } from "./shared/Router";
+import { Outlet } from "react-router-dom";
 import Nav from "./components/Nav";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Nav />
-      <Router />
-    </BrowserRouter>
+      <Outlet />
+    </>
   );
 }
 

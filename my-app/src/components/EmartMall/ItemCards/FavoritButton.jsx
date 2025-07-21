@@ -4,8 +4,9 @@ import { useState } from "react";
 const FavoritButton = () => {
   const [isPressed, setIsPressed] = useState(false);
   const handleClick = () => {
-    setIsPressed((prev) => !prev);
-    const alertText = isPressed
+    const newState = !isPressed;
+    setIsPressed(newState);
+    const alertText = newState
       ? "장바구니에 담겼습니다"
       : "장바구니 담기가 해재되었습니다";
     alert(alertText);
@@ -14,7 +15,7 @@ const FavoritButton = () => {
     <button
       className={clsx(
         "sprite__smilefresh--after button__favorite-item",
-        isPressed && "js-active"
+        isPressed && "js-active",
       )}
       aria-pressed={isPressed}
       aria-label="관심상품 등록하기"
