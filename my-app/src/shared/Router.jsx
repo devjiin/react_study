@@ -4,6 +4,7 @@ import Page3 from "../pages/Page3";
 import Page4 from "../pages/Page4";
 import Page5 from "../pages/Page5";
 import Page6 from "../pages/Page6";
+import Page7 from "../pages/Page7";
 import App from "../App";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
       {
         path: "/createPortal",
         element: <Page6 />,
+      },
+      {
+        path: "/filter",
+        element: <Page7 />,
       },
     ],
   },

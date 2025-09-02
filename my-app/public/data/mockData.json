@@ -832,5 +832,44 @@
         "name": "램프파이어"
       }
     ]
-  }
+  },
+  "filter": [
+    {
+      "filterType": "FILTER_DYNAMIC",
+      "title": "카테고리",
+      "data": [
+        {
+          "name": "봉지라면",
+          "id": "category1",
+          "isChecked": false
+        },
+        {
+          "name": "컵라면",
+          "id": "category2",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "filterType": "FILTER_DYNAMIC",
+      "title": "브랜드",
+      "data": [
+        {
+          "name": "농심",
+          "id": "brand1",
+          "isChecked": false
+        },
+        {
+          "name": "오뚜기",
+          "id": "brand2",
+          "isChecked": false
+        },
+        {
+          "name": "삼양",
+          "id": "brand3",
+          "isChecked": false
+        }
+      ]
+    }
+  ]
 }

@@ -20,6 +20,9 @@ const navText = [
   {
     id: "createPortal",
   },
+  {
+    id: "filter",
+  },
 ];
 const Nav = () => {
   return (
