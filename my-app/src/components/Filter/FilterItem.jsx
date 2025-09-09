@@ -1,6 +1,9 @@
 import clsx from "clsx";
+import { useContext } from "react";
+import { FilterContext } from "../../pages/Page7";
 
-const FilterItem = ({ filterData, dispatch }) => {
+const FilterItem = ({ filterData }) => {
+  const dispatch = useContext(FilterContext);
   function handleChecked(filterType, id) {
     dispatch({
       type: "FILTER_DYNAMIC",

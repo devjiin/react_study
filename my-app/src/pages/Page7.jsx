@@ -3,6 +3,7 @@ import FilterLayer from "../components/Filter/FilterLayer";
 import "../styles/common.css";
 import mockData from "../../public/data/mockData.json";
 import FilterItem from "../components/Filter/FilterItem";
+import { createContext } from "react";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -35,6 +36,8 @@ function reducer(state, action) {
   }
 }
 
+export const FilterContext = createContext(null);
+
 const Page7 = () => {
   const [isLayerOpen, setIsLayerOpen] = useState(false);
   const [state, dispatch] = useReducer(reducer, mockData.filter);
@@ -43,9 +46,10 @@ const Page7 = () => {
   };
 
   return (
+    <FilterContext.Provider value={dispatch}>
     <div className="container">
       <ul className="list__dynamic-filter">
-        <FilterItem filterData={state} dispatch={dispatch} />
+        <FilterItem filterData={state} />
       </ul>
       <button className="button__layer-open" onClick={handleClickOpen}>
         열기
@@ -57,6 +61,7 @@ const Page7 = () => {
         dispatch={dispatch}
       />
     </div>
+    </FilterContext.Provider>
   );
 };
 
