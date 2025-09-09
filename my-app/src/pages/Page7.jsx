@@ -1,9 +1,14 @@
-import { useReducer, useState } from "react";
+import { Suspense, useReducer, useState } from "react";
 import FilterLayer from "../components/Filter/FilterLayer";
 import "../styles/common.css";
-import mockData from "../../public/data/mockData.json";
 import FilterItem from "../components/Filter/FilterItem";
 import { createContext } from "react";
+import Loading from "../components/Loading/Loading";
+import Error from "../components/Error/Error";
+import { ErrorBoundary } from "react-error-boundary";
+import { fetchData } from "../api/fetchData";
+
+const resource = fetchData();
 
 function reducer(state, action) {
   switch (action.type) {
@@ -40,28 +45,33 @@ export const FilterContext = createContext(null);
 
 const Page7 = () => {
   const [isLayerOpen, setIsLayerOpen] = useState(false);
-  const [state, dispatch] = useReducer(reducer, mockData.filter);
+  const initialData = resource.read().filter;
+  const [state, dispatch] = useReducer(reducer, initialData);
   const handleClickOpen = () => {
     setIsLayerOpen(true);
   };
 
   return (
-    <FilterContext.Provider value={dispatch}>
-    <div className="container">
-      <ul className="list__dynamic-filter">
-        <FilterItem filterData={state} />
-      </ul>
-      <button className="button__layer-open" onClick={handleClickOpen}>
-        열기
-      </button>
-      <FilterLayer
-        filterData={state}
-        isLayerOpen={isLayerOpen}
-        setIsLayerOpen={setIsLayerOpen}
-        dispatch={dispatch}
-      />
-    </div>
-    </FilterContext.Provider>
+    <ErrorBoundary FallbackComponent={Error}>
+      <Suspense fallback={<Loading />}>
+        <div className="container">
+          <FilterContext.Provider value={dispatch}>
+            <ul className="list__dynamic-filter">
+              <FilterItem filterData={state} />
+            </ul>
+            <button className="button__layer-open" onClick={handleClickOpen}>
+              열기
+            </button>
+            <FilterLayer
+              filterData={state}
+              isLayerOpen={isLayerOpen}
+              setIsLayerOpen={setIsLayerOpen}
+              dispatch={dispatch}
+            />
+          </FilterContext.Provider>
+        </div>
+      </Suspense>
+    </ErrorBoundary>
   );
 };
 

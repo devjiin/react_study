@@ -7,6 +7,7 @@ import Page6 from "../pages/Page6";
 import Page7 from "../pages/Page7";
 import App from "../App";
 import { createBrowserRouter } from "react-router-dom";
+import Error from "../components/Error/Error";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,7 @@ export const router = createBrowserRouter([
       {
         path: "/filter",
         element: <Page7 />,
+        errorElement: <Error />,
       },
     ],
   },
