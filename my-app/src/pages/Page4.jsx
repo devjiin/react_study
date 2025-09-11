@@ -4,7 +4,7 @@ import "../styles/brandshop.css";
 
 const Page4 = () => {
   return (
-    <div className="container">
+    <div className="container box__brandshop">
       <BrandShop />
     </div>
   );

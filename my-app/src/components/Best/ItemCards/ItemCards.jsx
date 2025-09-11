@@ -4,8 +4,8 @@ import ItemPrice from "./ItemPrice";
 
 const ItemCards = ({ data, isMobile = false }) => {
   return (
-    <div className="box__best-list">
-      <ul className="list__best">
+    <div className="box__best-list px-8">
+      <ul className="list__best flex flex-wrap">
         {data.map((item) => {
           const {
             avgStarPoint,
@@ -32,7 +32,7 @@ const ItemCards = ({ data, isMobile = false }) => {
             miniShopInfo,
           } = item || {};
           return (
-            <li className="list-item" key={goodsCode}>
+            <li className="list-item w-1/5 mb-[30px] pr-[58px]" key={goodsCode}>
               <a href="" className="link">
                 <ItemImage
                   imageUrl={imageUrl}

@@ -8,12 +8,11 @@ export function fetchData() {
       (data) => {
         status = "success";
         result = data;
-      },
-      (err) => {
-        status = "error";
-        result = err;
-      },
-    );
+      })
+    .catch((err) => {
+      status = "error";
+      result = err;
+    })
 
   return {
     read() {
