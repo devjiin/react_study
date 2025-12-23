@@ -7,8 +7,8 @@ const FavoritButton = () => {
     const newState = !isPressed;
     setIsPressed(newState);
     const alertText = newState
-      ? "장바구니에 담겼습니다"
-      : "장바구니 담기가 해재되었습니다";
+      ? "관심상품이 등록되었습니다."
+      : "관심상품이 등록이 해재되었습니다";
     alert(alertText);
   };
   return (

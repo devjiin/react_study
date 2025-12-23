@@ -1,8 +1,7 @@
-import { useState } from "react";
 import CartButton from "./CartButton";
 import Counter from "./Counter";
 import ItemImage from "./ItemImage";
-// import ItemPrice from "./ItemPrice";
+import ItemPrice from "./ItemPrice";
 import FavoritButton from "./FavoritButton";
 
 const ItemCard = ({ item, setIsLayerOpen }) => {
@@ -29,7 +28,6 @@ const ItemCard = ({ item, setIsLayerOpen }) => {
     dealImageUrl,
     deliveryCode,
   } = item;
-  const [count, setCount] = useState(1);
   return (
     <div className="box__itemcard-container">
       <div className="box__itemcard-body">
@@ -58,7 +56,7 @@ const ItemCard = ({ item, setIsLayerOpen }) => {
           </a>
           <div className="box__itemcard-info">
             <div className="box__element-info">
-              <Counter count={count} setCount={setCount} />
+              <Counter />
               <CartButton setIsLayerOpen={setIsLayerOpen} />
             </div>
             <a href={itemUrl} className="link__itemcard-info">
@@ -70,11 +68,11 @@ const ItemCard = ({ item, setIsLayerOpen }) => {
                   {itemName}
                 </span>
               </span>
-              {/* <ItemPrice
+              <ItemPrice
                 discountRate={discountRate}
                 itemPrice={itemPrice}
                 sellPrice={sellPrice}
-              /> */}
+              />
             </a>
             <FavoritButton />
           </div>
